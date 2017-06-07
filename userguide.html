@@ -167,6 +167,9 @@ $(function () {
 $("#menu-toggle").click(function (e) {
     e.preventDefault();
     $("#wrapper").toggleClass("toggled");
+  
+  e.stopPropagation();
+    return false;
 });
   
   $("*:not(#menu-toggle)").on('click', function () {
