@@ -166,6 +166,10 @@ $("#menu-toggle").click(function (e) {
     e.preventDefault();
     $("#wrapper").toggleClass("toggled");
 });
+  
+  $("*:not(#menu-toggle)").on('click', function () {
+    $("#wrapper").removeClass("toggled");
+  });
 
 // Content swapper
 
