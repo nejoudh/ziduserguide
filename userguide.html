@@ -162,6 +162,8 @@
                                                           <!-- NOTE: MENU TOGGLE AND CONTENT SCRIPT -->
 <script>
 // menu mover
+  
+$(function () {
 $("#menu-toggle").click(function (e) {
     e.preventDefault();
     $("#wrapper").toggleClass("toggled");
@@ -170,7 +172,7 @@ $("#menu-toggle").click(function (e) {
   $("*:not(#menu-toggle)").on('click', function () {
     $("#wrapper").removeClass("toggled");
   });
-
+});
 // Content swapper
 
 $('.textWord_about').hide();
