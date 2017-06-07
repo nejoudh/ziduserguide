@@ -172,7 +172,7 @@ $("#menu-toggle").click(function (e) {
     return false;
 });
   
-  $("*:not(#menu-toggle)").on('click', function () {
+  $("body:not(#menu-toggle)").on('click', function () {
     $("#wrapper").removeClass("toggled");
   });
 });
