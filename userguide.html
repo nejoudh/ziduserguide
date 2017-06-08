@@ -164,15 +164,17 @@
 // menu mover
   
 $(function () {
-$("#menu-toggle").click(function (e) {
+
+  
+  $("body:not(#menu-toggle)").on('click', function () {
+    $("#wrapper").removeClass("toggled");
+  });
+  
+  $("#menu-toggle").click(function (e) {
     e.preventDefault();
     $("#wrapper").toggleClass("toggled");
  
 });
-  
-  $("body, .ham-size:not(#menu-toggle)").on('click', function () {
-    $("#wrapper").removeClass("toggled");
-  });
 });
 // Content swapper
 
