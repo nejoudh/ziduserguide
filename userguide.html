@@ -13,6 +13,47 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 <link href="styleing.css" rel="Stylesheet">
+  <style>
+    /* Icon 3 */
+
+#nav-icon3 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
+  top: 18px;
+}
+
+#nav-icon3 span:nth-child(4) {
+  top: 36px;
+}
+
+#nav-icon3.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+#nav-icon3.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav-icon3.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#nav-icon3.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+  </style>    
 </head>
 
 <body>
@@ -29,6 +70,12 @@
                 </div>
                 <div class="col-xs-3">
                   <a href="#menu-toggle" id="menu-toggle">
+                    <div id="nav-icon3">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
                 <img src="images/menu-options.svg" alt="hamburger menu" class="img-responsive ham-size"></a>
                 </div>
               </div>
@@ -187,6 +234,12 @@ $('.link').click(function() {
     $('.textWord_about[data-link=' + $(this).data('link') + ']').fadeIn({
         width: '200px'
     }, 300);
+});
+  
+  $(document).ready(function(){
+	$('#nav-icon3').click(function(){
+		$(this).toggleClass('open');
+	});
 });
 </script>
 </body>
