@@ -37,7 +37,7 @@
       </div>
 
 
-<div class="row container">
+<div class="row container main">
 
   <div class="col-xs-1">
   </div>
@@ -164,17 +164,17 @@
 // menu mover
   
 $(function () {
-
   
-  $("body:not(#menu-toggle)").on('click', function () {
-    $("#wrapper").removeClass("toggled");
-  });
-  
-  $("#menu-toggle").click(function (e) {
+$("#menu-toggle").click(function (e) {
     e.preventDefault();
     $("#wrapper").toggleClass("toggled");
  
 });
+  
+  $("main:not(#menu-toggle)").on('click', function () {
+    $("#wrapper").removeClass("toggled");
+  });
+  
 });
 // Content swapper
 
