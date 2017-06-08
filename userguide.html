@@ -167,12 +167,10 @@ $(function () {
 $("#menu-toggle").click(function (e) {
     e.preventDefault();
     $("#wrapper").toggleClass("toggled");
-  
-  e.stopPropagation();
-    return false;
+ 
 });
   
-  $("body:not(#menu-toggle)").on('click', function () {
+  $("body && #wrapper:not(#menu-toggle)").on('click', function () {
     $("#wrapper").removeClass("toggled");
   });
 });
