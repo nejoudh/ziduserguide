@@ -707,7 +707,7 @@ margin-top: -9px;
   margin-top: 11%;}
 
   #sidebar-wrapper {
-      top: 6%;
+      top: 7%;
       z-index: 1000;
       position: fixed;
       right: 0px;
@@ -732,6 +732,7 @@ margin-top: -9px;
       margin-left: 65%;
       margin-top: 2%;
   }
+
 }
 
 /* from iPhone 5 and smaller */
