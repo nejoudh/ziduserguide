@@ -6,6 +6,50 @@ box-sizing: border-box;
 }
 
 
+#custom-search-form {
+       margin:0;
+       margin-top: 5px;
+       padding: 0;
+
+   }
+
+   #custom-search-form .search-query {
+       padding-right: 3px;
+       padding-right: 4px \9;
+       padding-left: 3px;
+       padding-left: 4px \9;
+       /* IE7-8 doesn't have border-radius, so don't indent the padding */
+       border: none;
+       margin-bottom: 0;
+       -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+       border-radius: 3px;
+       background: #33ba9e;
+   }
+
+   #custom-search-form button {
+       border: 0;
+       background: none;
+       /** belows styles are working good */
+       padding: 2px 5px;
+       margin-top: 2px;
+       position: relative;
+       left: -28px;
+       /* IE7-8 doesn't have border-radius, so don't indent the padding */
+       margin-bottom: 0;
+       -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+       border-radius: 3px;
+   }
+
+   .search-query:focus + button {
+       z-index: 3;
+   }
+
+input{
+color: #fff;
+}
+
 body {
   background-color: #f2f2f4;
   overflow-x: hidden;
@@ -14,6 +58,8 @@ body {
 }
 
 
+.mainbody {
+background-color: #fff;}
 #menu-toggle {
     float: right;
 }
@@ -26,15 +72,14 @@ body {
 }
 #wrapper.toggled {
     padding-right: 250px;
+    width: 80%;
 }
 #sidebar-wrapper {
-    top: 8%;
+    top: -50px;
     z-index: 1000;
-    position: fixed;
-    right: 33.5%;
-    width: 0;
+    position:absolute;
     height: 87vh;
-    margin-right: -250px;
+    margin-right: -320px;
     overflow-x: hidden;
     background: #fff;
     -webkit-transition: all 0.5s ease;
@@ -44,7 +89,7 @@ body {
     border-left: solid 1px #ededee;
 }
 #wrapper.toggled #sidebar-wrapper {
-    width: 250px;
+    width: 200px;
 }
 #page-content-wrapper {
     width: 100%;
@@ -231,6 +276,9 @@ height: 2.5%;
   height: 30%;
 }
 
+
+.close-btn {
+display: none;}
 /* NOTE: APP Buttons */
 
 /*.btn-app-store{
@@ -360,7 +408,6 @@ height: 2.5%;
   .content {
     width: 100%;
     margin-top: -1%;
-
   }
 
   .ham-size {
@@ -385,7 +432,7 @@ height: 2.5%;
 
 }
 
-
+/* NOTE:  */
 @media only screen and (max-width:768px) {
 
   .sidebar-nav {
@@ -508,6 +555,8 @@ margin-top: -9px;
     }
 
 }
+
+
 /* iPhone Plus and smaller*/
 @media only screen and (max-width:414px) {
 
@@ -598,7 +647,7 @@ margin-top: -9px;
       width: 100vw;
       margin-top: 19%;
       overflow: visible;
-      margin-right: -10%
+      margin-right: -25%;
 }
 
   .page-header {
@@ -629,6 +678,24 @@ margin-top: -9px;
     .page-header {
       margin-top: .5%;
     }
+
+    .close-btn {
+    display:inline;
+    width: 15px;
+    height: 15px;}
+
+.ext-left{
+    float: left;
+    margin-left: 60%;
+    margin-top: 2%;
+}
+
+/*.video-content{
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}*/
 }
 
 
@@ -659,6 +726,12 @@ margin-top: -9px;
   .page-header {
     margin-top: 1%;
   }
+
+  .ext-left{
+      float: left;
+      margin-left: 65%;
+      margin-top: 2%;
+  }
 }
 
 /* from iPhone 5 and smaller */
@@ -669,10 +742,26 @@ margin-top: -9px;
   width: 170%;
   height: 170%;
 }
-  #sidebar-wrapper {
-      width: 100%;
-      border-left: none;
-      height: 100%;
-      margin-right: -120%;
+#sidebar-wrapper {
+    top: 6%;
+    z-index: 1000;
+    position: fixed;
+    right: 0px;
+    width: 62%;
+    height: 106vh;
+    margin-right: 0px;
+    overflow-x: hidden;
+    background: #fff;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    border-left: solid 1px #ededee;
+}
+
+  .ext-left{
+      float: left;
+      margin-left: 65%;
+      margin-top: 2%;
   }
 }
