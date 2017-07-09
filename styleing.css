@@ -582,10 +582,6 @@ margin-top: -9px;
     font-size: 16px;
   }
 
-.intro-para {
-  line-height: 20px;
-font-size: 14px;
-}
     #wrapper {
     }
 
@@ -665,6 +661,10 @@ font-size: 14px;
       font-size: 12px;
       line-height: 20px;
       text-align: right;
+    }
+    p.intro-para {
+      line-height: 20px;
+    font-size: 13px;
     }
 
     a.hamburger:hover, a.hamburger:visited, a.hamburger:active, a.hamburger:focus {
