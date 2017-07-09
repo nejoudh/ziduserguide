@@ -662,9 +662,11 @@ margin-top: -9px;
       line-height: 20px;
       text-align: right;
     }
+
     p.intro-para {
-      line-height: 20px;
-    font-size: 13px;
+      line-height: 30px;
+      font-size: 15px;
+      text-align: center;
     }
 
     a.hamburger:hover, a.hamburger:visited, a.hamburger:active, a.hamburger:focus {
