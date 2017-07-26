@@ -179,7 +179,18 @@
       overflow-x: scroll;
       margin-top: 6%;
     }
+  .img-col {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    }
 
+    .intro-img {
+      margin-top: 5%;
+      width: 35%;
+      height: 35%;
+    }
 
     .no-bg-brand {
       padding-top: 2%;
@@ -659,6 +670,11 @@
           margin-right: -25%;
     }
 
+    .intro-img {
+      margin-top: 5%;
+      width: 55%;
+      height: 55%;
+    }
       .page-header {
         font-size: 18px;
       }
