@@ -441,7 +441,7 @@
 
     }
 
-    /* NOTE:  */
+    /* NOTE:  iPad*/
     @media only screen and (max-width:768px) {
 
       .sidebar-nav {
@@ -606,7 +606,7 @@
         }*/
 
         #sidebar-wrapper {
-            top: 5%;
+            top: 6.5%;
             z-index: 1000;
             position: fixed;
             right: 0px;
