@@ -1,10 +1,18 @@
 * {
-    font-family: 'Cairo', sans-serif;
+    font-family:  JF, serif;
     direction: rtl;
     box-sizing: border-box;
 
     }
 
+    @font-face {
+  font-family: 'JF';
+  src: url('font/JF-Flat-regular.eot'); /* IE9 Compat Modes */
+  src: url('font/JF-Flat-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('font/JF-Flat-regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('font/JF-Flat-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('font/JF-Flat-regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
 
     #custom-search-form {
            margin:0;

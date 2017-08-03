@@ -1,11 +1,19 @@
 * {
-font-family: 'Cairo', sans-serif;
+font-family: JF;
 direction: rtl;
 box-sizing: border-box;
 background-color: white;
 
 }
 
+@font-face {
+font-family: 'JF';
+src: url('../font/JF-Flat-regular.eot'); /* IE9 Compat Modes */
+src: url('../font/JF-Flat-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+   url('../font/JF-Flat-regular.woff') format('woff'), /* Pretty Modern Browsers */
+   url('../font/JF-Flat-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+   url('../font/JF-Flat-regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
 
 body {
   background-color: #f2f2f4;
@@ -31,7 +39,7 @@ body {
 
 p.in-title {
   font-size: 14px;
-  font-family: 'Cairo', sans-serif;
+  font-family: JF, serif;
   line-height: 22px;
   font-weight: bold;
 }
@@ -227,8 +235,8 @@ margin-top: -9px;
     }
 
     img.gifs {
-      width: 100%;
-      height: 100%;
+      width: 150%;
+      height: 150%;
     }
 
     .page-header {
